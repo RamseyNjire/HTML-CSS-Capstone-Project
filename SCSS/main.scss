@@ -1,0 +1,24 @@
+@font-face {
+  font-family: cocogoose;
+  src: url('COCOGOOSELETTERPRESS TRIAL.ttf')
+}
+
+$background-gray: #272a31;
+$highlight-orange: #ec5242;
+$text-gray: #d3d3d3;
+
+.top-nav {
+  background-color: $background-gray;
+  color: $text-gray;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  padding:0.25rem 13rem;
+  .nav-item {
+    padding-left: 1.5rem;
+  }
+  .nav-link {
+    color: $text-gray;
+    text-decoration: none;
+    padding: 0;
+  }
+}
