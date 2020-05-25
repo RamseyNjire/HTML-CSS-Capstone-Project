@@ -5,6 +5,18 @@ $nav-padding: 0.25rem 13rem;
 $header-text: Frijole, sans-serif;
 $body-text: Lato, sans-serif;
 
+@mixin flexColumns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Lato;
+  color: $background-gray;
+}
+
 .top-menu-container {
   background: $background-gray;
 }
@@ -47,13 +59,12 @@ $body-text: Lato, sans-serif;
   }
 }
 
-main {
+
+
+.main-banner-container {
+  min-height: 100vh;
   background-image: url(/production/images/steel.png);
   background-color: $background-gray;
-}
-
-.main-banner {
-  min-height: 100vh;
 }
 
 h3 {
@@ -68,22 +79,43 @@ h1 {
 }
 
 .snippet {
-  border: 3px solid white;
+  border: 3px solid $text-gray;
   padding: 1rem;
   font-family: $body-text;
   font-size: 16px;
-  color: white;
+  color: $text-gray;
 }
 
 .date {
   font-family: Lato, sans-serif;
   font-weight: bold;
   font-size: 32px;
-  color: white;
+  color: $text-gray;
 }
 
 .venue {
   @extend .date;
   font-size: 16px;
   font-weight: light;
+}
+
+.main-program {
+  @include flexColumns();
+  background-color: $text-gray;
+  a {
+    color: $background-gray;
+    text-decoration: underline;
+  }
+}
+
+.underline {
+  border: 2px solid $highlight-orange;
+  width: 3rem; 
+}
+
+.program-header {
+  @include flexColumns();
+  border: none;
+  background-color: white;
+  color: $highlight-orange;
 }

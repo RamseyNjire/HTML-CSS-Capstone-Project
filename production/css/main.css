@@ -1,3 +1,8 @@
+body {
+  font-family: Lato;
+  color: #272a31;
+}
+
 .top-menu-container {
   background: #272a31;
 }
@@ -46,13 +51,10 @@
   padding-top: 1px;
 }
 
-main {
+.main-banner-container {
+  min-height: 100vh;
   background-image: url(/production/images/steel.png);
   background-color: #272a31;
-}
-
-.main-banner {
-  min-height: 100vh;
 }
 
 h3 {
@@ -67,22 +69,68 @@ h1 {
 }
 
 .snippet {
-  border: 3px solid white;
+  border: 3px solid #d3d3d3;
   padding: 1rem;
   font-family: Lato, sans-serif;
   font-size: 16px;
-  color: white;
+  color: #d3d3d3;
 }
 
 .date, .venue {
   font-family: Lato, sans-serif;
   font-weight: bold;
   font-size: 32px;
-  color: white;
+  color: #d3d3d3;
 }
 
 .venue {
   font-size: 16px;
   font-weight: light;
+}
+
+.main-program {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d3d3d3;
+}
+
+.main-program a {
+  color: #272a31;
+  text-decoration: underline;
+}
+
+.underline {
+  border: 2px solid #ec5242;
+  width: 3rem;
+}
+
+.program-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: white;
+  color: #ec5242;
 }
 /*# sourceMappingURL=main.css.map */
