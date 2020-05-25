@@ -1,13 +1,11 @@
-@font-face {
-  font-family: cocogoose;
-  src: url("COCOGOOSELETTERPRESS TRIAL.ttf");
+.top-menu-container {
+  background: #272a31;
 }
 
 .top-nav, .bottom-nav {
   background-color: #272a31;
   font-family: Lato, sans-serif;
   font-size: 1rem;
-  padding: 0.25rem 13rem;
 }
 
 .top-nav .nav-item, .bottom-nav .nav-item {
@@ -21,11 +19,16 @@
   outline: none;
 }
 
+.bottom-nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .bottom-nav .navbar-brand {
-  font-family: cocogoose, sans-serif;
+  font-family: Frijole, sans-serif;
   color: #ec5242;
   font-weight: bold;
-  margin-right: 25rem;
 }
 
 .bottom-nav .navbar-brand img {
@@ -41,5 +44,45 @@
 .bottom-nav .active {
   border: 3px solid #ec5242;
   padding-top: 1px;
+}
+
+main {
+  background-image: url(/production/images/steel.png);
+  background-color: #272a31;
+}
+
+.main-banner {
+  min-height: 100vh;
+}
+
+h3 {
+  font-family: Lato, sans-serif;
+  font-size: 2rem;
+  color: #ec5242;
+}
+
+h1 {
+  font-family: Frijole, sans-serif;
+  color: #ec5242;
+}
+
+.snippet {
+  border: 3px solid white;
+  padding: 1rem;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.date, .venue {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+}
+
+.venue {
+  font-size: 16px;
+  font-weight: light;
 }
 /*# sourceMappingURL=main.css.map */

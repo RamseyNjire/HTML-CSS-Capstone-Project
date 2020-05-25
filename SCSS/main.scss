@@ -1,18 +1,19 @@
-@font-face {
-  font-family: cocogoose;
-  src: url('COCOGOOSELETTERPRESS TRIAL.ttf')
-}
-
 $background-gray: #272a31;
 $highlight-orange: #ec5242;
 $text-gray: #d3d3d3;
 $nav-padding: 0.25rem 13rem;
+$header-text: Frijole, sans-serif;
+$body-text: Lato, sans-serif;
+
+.top-menu-container {
+  background: $background-gray;
+}
 
 .top-nav {
   background-color: $background-gray;
-  font-family: Lato, sans-serif;
+  font-family: $body-text;
   font-size: 1rem;
-  padding: $nav-padding;
+  // padding: $nav-padding;
   .nav-item {
     padding-left: 1.5rem;
   }
@@ -26,11 +27,11 @@ $nav-padding: 0.25rem 13rem;
 
 .bottom-nav {
   @extend .top-nav;
+  justify-content: space-between;
   .navbar-brand {
-    font-family: cocogoose, sans-serif;
+    font-family: $header-text;
     color: $highlight-orange;
     font-weight: bold;
-    margin-right: 25rem;
     img {
       height: 2rem;
     }
@@ -44,4 +45,45 @@ $nav-padding: 0.25rem 13rem;
     border: 3px solid $highlight-orange;
     padding-top: 1px;
   }
+}
+
+main {
+  background-image: url(/production/images/steel.png);
+  background-color: $background-gray;
+}
+
+.main-banner {
+  min-height: 100vh;
+}
+
+h3 {
+  font-family: $body-text;
+  font-size: 2rem;
+  color: $highlight-orange;
+}
+
+h1 {
+  font-family: $header-text;
+  color: $highlight-orange;
+}
+
+.snippet {
+  border: 3px solid white;
+  padding: 1rem;
+  font-family: $body-text;
+  font-size: 16px;
+  color: white;
+}
+
+.date {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+}
+
+.venue {
+  @extend .date;
+  font-size: 16px;
+  font-weight: light;
 }
