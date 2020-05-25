@@ -3,21 +3,43 @@
   src: url("COCOGOOSELETTERPRESS TRIAL.ttf");
 }
 
-.top-nav {
+.top-nav, .bottom-nav {
   background-color: #272a31;
-  color: #d3d3d3;
   font-family: Lato, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 0.25rem 13rem;
 }
 
-.top-nav .nav-item {
+.top-nav .nav-item, .bottom-nav .nav-item {
   padding-left: 1.5rem;
 }
 
-.top-nav .nav-link {
+.top-nav .nav-link, .bottom-nav .nav-link {
   color: #d3d3d3;
   text-decoration: none;
   padding: 0;
+  outline: none;
+}
+
+.bottom-nav .navbar-brand {
+  font-family: cocogoose, sans-serif;
+  color: #ec5242;
+  font-weight: bold;
+  margin-right: 25rem;
+}
+
+.bottom-nav .navbar-brand img {
+  height: 2rem;
+}
+
+.bottom-nav .nav-link {
+  color: #272a31;
+  padding: 0.25rem;
+  padding-bottom: 5px;
+}
+
+.bottom-nav .active {
+  border: 3px solid #ec5242;
+  padding-top: 1px;
 }
 /*# sourceMappingURL=main.css.map */

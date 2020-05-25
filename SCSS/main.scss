@@ -6,13 +6,13 @@
 $background-gray: #272a31;
 $highlight-orange: #ec5242;
 $text-gray: #d3d3d3;
+$nav-padding: 0.25rem 13rem;
 
 .top-nav {
   background-color: $background-gray;
-  color: $text-gray;
   font-family: Lato, sans-serif;
-  font-size: 15px;
-  padding:0.25rem 13rem;
+  font-size: 1rem;
+  padding: $nav-padding;
   .nav-item {
     padding-left: 1.5rem;
   }
@@ -20,5 +20,28 @@ $text-gray: #d3d3d3;
     color: $text-gray;
     text-decoration: none;
     padding: 0;
+    outline: none;
+  }
+}
+
+.bottom-nav {
+  @extend .top-nav;
+  .navbar-brand {
+    font-family: cocogoose, sans-serif;
+    color: $highlight-orange;
+    font-weight: bold;
+    margin-right: 25rem;
+    img {
+      height: 2rem;
+    }
+  }
+  .nav-link {
+    color: $background-gray;
+    padding: 0.25rem;
+    padding-bottom: 5px;
+  }
+  .active {
+    border: 3px solid $highlight-orange;
+    padding-top: 1px;
   }
 }
