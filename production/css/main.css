@@ -110,7 +110,7 @@ h1 {
   text-decoration: underline;
 }
 
-.underline {
+.underline, .info .mini-underline {
   border: 2px solid #ec5242;
   width: 3rem;
 }
@@ -132,5 +132,54 @@ h1 {
   border: none;
   background-color: white;
   color: #ec5242;
+}
+
+.featured-speakers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.speaker-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.speaker-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 100px;
+  min-width: 100px;
+}
+
+.info h4 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.info .highlight, .info p {
+  font-size: 0.75rem;
+  color: #ec5242;
+}
+
+.info .mini-underline {
+  width: 1.5rem;
+  border: 1px solid #d3d3d3;
+}
+
+.info p {
+  color: #272a31;
 }
 /*# sourceMappingURL=main.css.map */

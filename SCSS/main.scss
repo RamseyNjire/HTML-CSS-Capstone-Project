@@ -119,3 +119,38 @@ h1 {
   background-color: white;
   color: $highlight-orange;
 }
+
+.featured-speakers {
+  @include flexColumns();
+}
+
+.speaker-profile {
+  display: flex;
+}
+
+.speaker-image {
+  object-fit: cover;
+  max-height: 100px;
+  min-width: 100px;
+}
+
+.info {
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+  }
+  .highlight {
+    font-size: 0.75rem;
+    color: $highlight-orange;
+  }
+  .mini-underline {
+    @extend .underline;
+    width: 1.5rem;
+    border: 1px solid $text-gray;
+  }
+  p {
+    @extend .highlight;
+    color: $background-gray;
+  }
+}
