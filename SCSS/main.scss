@@ -20,6 +20,17 @@ $body-text: Lato, sans-serif;
 body {
   font-family: Lato;
   color: $background-gray;
+  background-color: $text-gray;
+}
+
+header {
+  position: sticky;
+  top: -1.5rem;
+  z-index: 999;
+  @media (max-width: 769px) {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .top-menu-container {
@@ -43,7 +54,7 @@ body {
 
 .bottom-nav {
   @extend .top-nav;
-  justify-content: space-between;
+  background-color: $text-gray;
   .navbar-brand {
     font-family: $header-text;
     color: $highlight-orange;
@@ -52,14 +63,34 @@ body {
       height: 2rem;
     }
   }
+  .navbar-toggler-icon {
+    @include flexColumns();
+    padding: 0;
+    width: 2.5rem;
+    outline: none;
+    span {
+      width: 100%;
+      margin-bottom: 0.5rem;
+      border: 2px solid $background-gray;
+      border-radius: 25%;
+    }
+    .last-span {
+      margin-bottom: 0;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .navbar-collapse {
+    justify-content: end;
+  }
   .nav-link {
     color: $background-gray;
     padding: 0.25rem;
     padding-bottom: 5px;
   }
   .active {
-    border: 3px solid $highlight-orange;
-    padding-top: 1px;
+    outline: 3px solid $highlight-orange;
   }
 }
 
@@ -79,6 +110,15 @@ h3 {
 h1 {
   font-family: $header-text;
   color: $highlight-orange;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.banner-info {
+  @media (min-width: 769px) {
+    max-width: 50%;
+  }
 }
 
 .snippet {
@@ -116,6 +156,12 @@ h1 {
   width: 3rem; 
 }
 
+.program-cards {
+  @media (min-width: 769px) {
+    width: 50%;
+  }
+}
+
 .program-header {
   @include flexColumns();
   border: none;
@@ -131,8 +177,15 @@ h1 {
   }
 }
 
+.speaker-profiles {
+  @media (min-width: 769px) {
+    width: 75%;
+  }
+}
+
 .speaker-profile {
   display: flex;
+  justify-content: center;
 }
 
 .speaker-image {
@@ -162,6 +215,9 @@ h1 {
     @extend .highlight;
     color: $text-gray;
   }
+  @media (max-width: 769px) {
+    max-width: 50%;
+  }
 }
 
 .partners {
@@ -178,6 +234,11 @@ h1 {
     font-weight: 700;
     font-style: italic;
   }
+  @media (max-width: 769px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+  }
 }
 
 footer {
@@ -186,8 +247,11 @@ footer {
   align-items: center;
   .logo-container {
     object-fit: cover;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    @media (min-width: 769px) {
+      min-width: 50%;
+    }
   }
   h4 {
     font-family: $header-text;
@@ -203,5 +267,17 @@ footer {
     h6 {
       font-weight: 700;
     }
+    @media (max-width: 769px) {
+      margin-top: 1rem;
+      justify-content: stretch;
+      align-items: start;
+    }
+  }
+  @media (max-width: 769px) {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

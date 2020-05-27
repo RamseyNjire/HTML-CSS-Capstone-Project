@@ -1,6 +1,22 @@
 body {
   font-family: Lato;
   color: #272a31;
+  background-color: #d3d3d3;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1.5rem;
+  z-index: 999;
+}
+
+@media (max-width: 769px) {
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 }
 
 .top-menu-container {
@@ -25,9 +41,7 @@ body {
 }
 
 .bottom-nav {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-color: #d3d3d3;
 }
 
 .bottom-nav .navbar-brand {
@@ -40,6 +54,46 @@ body {
   height: 2rem;
 }
 
+.bottom-nav .navbar-toggler-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  width: 2.5rem;
+  outline: none;
+}
+
+.bottom-nav .navbar-toggler-icon span {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: 2px solid #272a31;
+  border-radius: 25%;
+}
+
+.bottom-nav .navbar-toggler-icon .last-span {
+  margin-bottom: 0;
+}
+
+.bottom-nav .navbar-toggler-icon:focus {
+  outline: none;
+}
+
+.bottom-nav .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .bottom-nav .nav-link {
   color: #272a31;
   padding: 0.25rem;
@@ -47,8 +101,7 @@ body {
 }
 
 .bottom-nav .active {
-  border: 3px solid #ec5242;
-  padding-top: 1px;
+  outline: 3px solid #ec5242;
 }
 
 .main-banner-container {
@@ -66,6 +119,18 @@ h3 {
 h1 {
   font-family: Frijole, sans-serif;
   color: #ec5242;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .banner-info {
+    max-width: 50%;
+  }
 }
 
 .snippet {
@@ -115,6 +180,12 @@ h1 {
   width: 3rem;
 }
 
+@media (min-width: 769px) {
+  .program-cards {
+    width: 50%;
+  }
+}
+
 .program-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,10 +226,19 @@ h1 {
   color: #d3d3d3;
 }
 
+@media (min-width: 769px) {
+  .speaker-profiles {
+    width: 75%;
+  }
+}
+
 .speaker-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .speaker-image {
@@ -188,6 +268,12 @@ h1 {
 
 .info p {
   color: #d3d3d3;
+}
+
+@media (max-width: 769px) {
+  .info {
+    max-width: 50%;
+  }
 }
 
 .partners {
@@ -223,6 +309,19 @@ h1 {
   font-style: italic;
 }
 
+@media (max-width: 769px) {
+  .partner-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
 footer {
   background-color: #272a31;
   -webkit-box-pack: center;
@@ -236,12 +335,18 @@ footer {
 footer .logo-container {
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 769px) {
+  footer .logo-container {
+    min-width: 50%;
+  }
 }
 
 footer h4 {
@@ -266,5 +371,34 @@ footer .copyright-info {
 
 footer .copyright-info h6 {
   font-weight: 700;
+}
+
+@media (max-width: 769px) {
+  footer .copyright-info {
+    margin-top: 1rem;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+@media (max-width: 769px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

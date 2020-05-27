@@ -16,38 +16,43 @@
   </head>
   <body>
     <header>
-      <div class="top-menu-container">
-        <nav class="nav top-nav justify-content-end container">
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Swahili</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">My Ticketing Account</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Logout</a>
-          </li>
-        </nav>
-      </div>
-      <div class="bg-light bottom-menu-container">
-        <nav class="navbar navbar-expand-sm bottom-nav bg-light container">
-          <a href="#" class="navbar-brand">
-            <img src="images/hearts-of-art-logo.jpg" alt="hearts-of-art-logo" class="brand-image">
-            HEARTS OF ART
+      <nav class="nav top-nav justify-content-end d-none d-md-flex px-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fab fa-facebook-f"></i>
           </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Swahili</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">My Ticketing Account</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Logout</a>
+        </li>
+      </nav>
+      <nav class="navbar navbar-expand-md bottom-nav sticky-top">
+        <a href="#" class="navbar-brand d-none d-md-block">
+          <img src="images/hearts-of-art-logo.jpg" alt="hearts-of-art-logo" class="brand-image">
+          HEARTS OF ART
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-navbar">
+          <span class="navbar-toggler-icon">
+            <span class="d-block"></span>
+            <span class="d-block"></span>
+            <span class="d-block last-span"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsible-navbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#" class="nav-link active">
+              <a href="#" class="nav-link active mt-3 mt-md-0">
                 Home
               </a>
             </li>
@@ -62,14 +67,14 @@
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <main class="container-fluid p-0">
       <section class="main-banner-container container-fluid">
         <h4 class="d-none"></h4>
         <section class="main-banner container pt-5">
-          <div class="info w-50">
+          <div class="banner-info px-2">
             <h3 class="mb-4">Hearts of Art Welcomes You!</h3>
             <h1>
               DEUS EX PANDEMUS: THE DISCUSSION
@@ -91,7 +96,7 @@
           Main Program
         </h4>
         <div class="underline mb-4"></div>
-        <section class="card-columns program-cards w-50 mb-4">
+        <section class="card-columns program-cards px-3 mb-4">
           <h4 class="d-none"></h4>
           <article class="card">
             <h4 class="card-header program-header">
@@ -128,9 +133,9 @@
       <section class="featured-speakers py-4 px-auto">
         <h4>Featured Speakers</h4>
         <div class="underline mb-4"></div>
-        <section class="speaker-profiles row w-75">
+        <section class="speaker-profiles row">
           <h4 class="d-none"></h4>
-          <section class="col-6">
+          <section class="col-12 col-md-6">
             <h4 class="d-none"></h4>
             <article class="speaker-profile mb-4">
               <h4 class="d-none"></h4>
@@ -163,7 +168,7 @@
               </div>
             </article>
           </section>
-          <section class="col-6">
+          <section class="col-12 col-md-6">
             <h4 class="d-none"></h4>
             <article class="speaker-profile mb-4">
               <h4 class="d-none"></h4>
@@ -209,14 +214,14 @@
         </div>
       </section>
     </main>
-    <footer class="py-4 px-5 d-flex">
-      <section class="logo-container d-flex w-50">
+    <footer class="py-4 px-3 px-md-5 d-flex">
+      <section class="logo-container d-flex">
         <img src="/production/images/hearts-of-art-logo.jpg" alt="hearts-of-art-logo" width="50" height="50">
         <h4 class="ml-2">Hearts of Art</h4>
       </section>
-      <section class="copyright-info ml-5 d-flex w-50">
+      <section class="copyright-info ml-0 ml-md-5 d-flex">
         <h6 class="mb-3">Copyright 2020</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dignissimos ab inventore velit illo ullam voluptatum molestiae tempora recusandae quidem.</p>
+        <p>This is typically where the legal stuff goes. Since I've got none of that to show, I'll just do a shameless plug here and point out that Ramsey Njire built this page.</p>
       </section>
     </footer>
     <!-- Optional JavaScript -->
