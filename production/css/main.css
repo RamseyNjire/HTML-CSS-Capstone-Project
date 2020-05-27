@@ -52,9 +52,9 @@ body {
 }
 
 .main-banner-container {
-  min-height: 100vh;
   background-image: url(/production/images/steel.png);
   background-color: #272a31;
+  min-height: 100vh;
 }
 
 h3 {
@@ -148,6 +148,11 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #272a31;
+}
+
+.featured-speakers h4 {
+  color: #d3d3d3;
 }
 
 .speaker-profile {
@@ -167,11 +172,13 @@ h1 {
   font-size: 1.25rem;
   line-height: 1.25rem;
   font-weight: 700;
+  color: #d3d3d3;
 }
 
 .info .highlight, .info p {
   font-size: 0.75rem;
   color: #ec5242;
+  font-style: italic;
 }
 
 .info .mini-underline {
@@ -180,6 +187,84 @@ h1 {
 }
 
 .info p {
+  color: #d3d3d3;
+}
+
+.partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d3d3d3;
   color: #272a31;
+}
+
+.partner-list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partner-list h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+footer {
+  background-color: #272a31;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .logo-container {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h4 {
+  font-family: Frijole, sans-serif;
+  color: #ec5242;
+  font-weight: bold;
+}
+
+footer .copyright-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  color: #d3d3d3;
+}
+
+footer .copyright-info h6 {
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

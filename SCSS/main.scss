@@ -12,6 +12,11 @@ $body-text: Lato, sans-serif;
   align-items: center;
 }
 
+@mixin steelBackground {
+  background-image: url(/production/images/steel.png);
+  background-color: $background-gray;
+}
+
 body {
   font-family: Lato;
   color: $background-gray;
@@ -25,7 +30,6 @@ body {
   background-color: $background-gray;
   font-family: $body-text;
   font-size: 1rem;
-  // padding: $nav-padding;
   .nav-item {
     padding-left: 1.5rem;
   }
@@ -62,9 +66,8 @@ body {
 
 
 .main-banner-container {
+  @include steelBackground();
   min-height: 100vh;
-  background-image: url(/production/images/steel.png);
-  background-color: $background-gray;
 }
 
 h3 {
@@ -122,6 +125,10 @@ h1 {
 
 .featured-speakers {
   @include flexColumns();
+  background-color: $background-gray;
+  h4 {
+    color: $text-gray;
+  }
 }
 
 .speaker-profile {
@@ -139,10 +146,12 @@ h1 {
     font-size: 1.25rem;
     line-height: 1.25rem;
     font-weight: 700;
+    color: $text-gray;
   }
   .highlight {
     font-size: 0.75rem;
     color: $highlight-orange;
+    font-style: italic;
   }
   .mini-underline {
     @extend .underline;
@@ -151,6 +160,48 @@ h1 {
   }
   p {
     @extend .highlight;
-    color: $background-gray;
+    color: $text-gray;
+  }
+}
+
+.partners {
+  @include flexColumns();
+  background-color: $text-gray;
+  color: $background-gray;
+}
+
+.partner-list {
+  justify-content: space-between;
+  align-items: center;
+  h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+footer {
+  background-color: $background-gray;
+  justify-content: center;
+  align-items: center;
+  .logo-container {
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+  }
+  h4 {
+    font-family: $header-text;
+    color: $highlight-orange;
+    font-weight: bold;
+  }
+
+  .copyright-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: $text-gray;
+    h6 {
+      font-weight: 700;
+    }
   }
 }
