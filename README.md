@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/RamseyNjire/HTML-CSS-Capstone-Project/feature-branch/production/index.html)
+[Live Demo Link](https://heartsofartconference.netlify.app/)
 
 
 ## Getting Started
