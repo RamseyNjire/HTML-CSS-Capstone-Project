@@ -1,74 +1,56 @@
-# Project Name
+# HTML & CSS Capstone Project
 
-> One paragraph statement about the project.
+> In this project, I was supposed to take inspiration from [this](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) demo of a conference site. I decided to build a site announcing an upcoming play and live panel discussion with an interesting title and a rather recognizable theme for anyone checking this project out in 2020. I used Sass to compile the CSS, Bootstrap for most of the responsiveness, and CSS Grid and Flexbox to make some of the more intricate layouts easier. I hope you enjoy what I came up with!
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
-
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML5, CSS3
+- Bootstrap,
+- SCSS
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://raw.githack.com/RamseyNjire/HTML-CSS-Capstone-Project/feature-branch/production/index.html)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Clone the repo
 
-### Setup
+### Install Live Sass on VSCode to read the Sass files
 
-### Install
+### Install Live Server for fast serving of pages
 
-### Usage
+### Open the files with VSCode, clik on 'Go Live' at the bottom right of the screen and...
 
-### Run tests
-
-### Deployment
+### You're good to go! :+1:
 
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Ramsey Njire**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Ramsey Njire](https://github.com/RamseyNjire/)
+- Twitter: [@untakenramram](https://twitter.com/untakenramram)
+- Linkedin: [Ramsey Njire](https://www.linkedin.com/in/ramsey-njire-51984931/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/RamseyNjire/HTML-CSS-Capstone-Project/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
