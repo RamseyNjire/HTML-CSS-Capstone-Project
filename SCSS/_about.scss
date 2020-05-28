@@ -1,0 +1,72 @@
+$background-gray: #272a31;
+$highlight-orange: #ec5242;
+$text-gray: #d3d3d3;
+$nav-padding: 0.25rem 13rem;
+$header-text: Frijole, sans-serif;
+$body-text: Lato, sans-serif;
+
+@mixin flexColumns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin steelBackground {
+  background-image: url(/production/images/steel.png);
+  background-color: $background-gray;
+}
+
+.main-section {
+  @include steelBackground();
+  color: $highlight-orange;
+  a {
+    color: $highlight-orange;
+    text-decoration: underline;
+  }
+}
+
+.explanation {
+  border-color: $text-gray;
+  color: $highlight-orange;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.logo-section {
+  p {
+    @media (min-width: 769px) {
+      max-width: 50%;
+    }
+  }
+  .logo-box {
+    border-color: $background-gray !important;
+    padding: 1rem;
+    max-width: 300px;
+  }
+}
+
+.past-activity-cards {
+  .card-columns {
+    @media (max-width: 769px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.past-activity-card {
+  max-width: 300px;
+  color: $background-gray;
+  .card-img-overlay {
+    background: $highlight-orange;
+    opacity: 0.7;
+  }
+  h4 {
+    font-weight: 900;
+  }
+  a {
+    color: $background-gray;
+    text-decoration: none;
+  }
+}

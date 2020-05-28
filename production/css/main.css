@@ -1,7 +1,72 @@
+.main-section {
+  background-image: url(/production/images/steel.png);
+  background-color: #272a31;
+  color: #ec5242;
+}
+
+.main-section a {
+  color: #ec5242;
+  text-decoration: underline;
+}
+
+.explanation {
+  border-color: #d3d3d3;
+  color: #ec5242;
+}
+
+.explanation p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 769px) {
+  .logo-section p {
+    max-width: 50%;
+  }
+}
+
+.logo-section .logo-box {
+  border-color: #272a31 !important;
+  padding: 1rem;
+  max-width: 300px;
+}
+
+@media (max-width: 769px) {
+  .past-activity-cards .card-columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.past-activity-card {
+  max-width: 300px;
+  color: #272a31;
+}
+
+.past-activity-card .card-img-overlay {
+  background: #ec5242;
+  opacity: 0.7;
+}
+
+.past-activity-card h4 {
+  font-weight: 900;
+}
+
+.past-activity-card a {
+  color: #272a31;
+  text-decoration: none;
+}
+
 body {
   font-family: Lato;
   color: #272a31;
   background-color: #d3d3d3;
+}
+
+body img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header {
@@ -9,6 +74,8 @@ header {
   position: sticky;
   top: -1.5rem;
   z-index: 999;
+  -webkit-box-shadow: 0 1px 1px #272a31;
+          box-shadow: 0 1px 1px #272a31;
 }
 
 @media (max-width: 769px) {
@@ -40,8 +107,14 @@ header {
   outline: none;
 }
 
+@media (max-width: 769px) {
+  .navbar {
+    background-image: url(/production/images/steel.png);
+  }
+}
+
 .bottom-nav {
-  background-color: #d3d3d3;
+  background-color: white;
 }
 
 .bottom-nav .navbar-brand {
@@ -78,6 +151,7 @@ header {
   margin-bottom: 0.5rem;
   border: 2px solid #272a31;
   border-radius: 25%;
+  border-color: #ec5242;
 }
 
 .bottom-nav .navbar-toggler-icon .last-span {
@@ -92,6 +166,7 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  background: white;
 }
 
 .bottom-nav .nav-link {
@@ -242,8 +317,6 @@ h1 {
 }
 
 .speaker-image {
-  -o-object-fit: cover;
-     object-fit: cover;
   max-height: 100px;
   min-width: 100px;
 }

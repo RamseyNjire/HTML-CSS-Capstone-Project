@@ -1,3 +1,6 @@
+@import './about';
+@import './tickets';
+
 $background-gray: #272a31;
 $highlight-orange: #ec5242;
 $text-gray: #d3d3d3;
@@ -21,12 +24,16 @@ body {
   font-family: Lato;
   color: $background-gray;
   background-color: $text-gray;
+  img {
+    object-fit: cover;
+  }
 }
 
 header {
   position: sticky;
   top: -1.5rem;
   z-index: 999;
+  box-shadow: 0 1px 1px $background-gray;
   @media (max-width: 769px) {
     position: sticky;
     top: 0;
@@ -52,9 +59,15 @@ header {
   }
 }
 
+.navbar {
+  @media (max-width: 769px) {
+    background-image: url(/production/images/steel.png);
+  }
+}
+
 .bottom-nav {
   @extend .top-nav;
-  background-color: $text-gray;
+  background-color: white;
   .navbar-brand {
     font-family: $header-text;
     color: $highlight-orange;
@@ -73,6 +86,7 @@ header {
       margin-bottom: 0.5rem;
       border: 2px solid $background-gray;
       border-radius: 25%;
+      border-color: $highlight-orange;
     }
     .last-span {
       margin-bottom: 0;
@@ -83,6 +97,7 @@ header {
   }
   .navbar-collapse {
     justify-content: end;
+    background: white;
   }
   .nav-link {
     color: $background-gray;
@@ -189,7 +204,6 @@ h1 {
 }
 
 .speaker-image {
-  object-fit: cover;
   max-height: 100px;
   min-width: 100px;
 }

@@ -1,0 +1,18 @@
+$background-gray: #272a31;
+$highlight-orange: #ec5242;
+$text-gray: #d3d3d3;
+$nav-padding: 0.25rem 13rem;
+$header-text: Frijole, sans-serif;
+$body-text: Lato, sans-serif;
+
+@mixin flexColumns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin steelBackground {
+  background-image: url(/production/images/steel.png);
+  background-color: $background-gray;
+}
