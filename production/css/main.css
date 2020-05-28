@@ -127,6 +127,7 @@ body {
   font-family: Lato;
   color: #272a31;
   background-color: #d3d3d3;
+  max-width: 1310px;
 }
 
 body img {
@@ -242,6 +243,12 @@ header {
 
 .bottom-nav .active {
   outline: 3px solid #ec5242;
+}
+
+@media (max-width: 769px) {
+  .bottom-nav .nav-item {
+    padding-left: 0;
+  }
 }
 
 .main-banner-container {

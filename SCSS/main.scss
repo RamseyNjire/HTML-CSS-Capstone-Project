@@ -24,6 +24,7 @@ body {
   font-family: Lato;
   color: $background-gray;
   background-color: $text-gray;
+  max-width: 1310px;
   img {
     object-fit: cover;
   }
@@ -106,6 +107,11 @@ header {
   }
   .active {
     outline: 3px solid $highlight-orange;
+  }
+  @media (max-width: 769px) {
+    .nav-item {
+      padding-left: 0;
+    }
   }
 }
 
