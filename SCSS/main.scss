@@ -21,10 +21,11 @@ $body-text: Lato, sans-serif;
 }
 
 body {
-  font-family: Lato;
+  font-family: $body-text;
   color: $background-gray;
   background-color: $text-gray;
   max-width: 1310px;
+
   img {
     object-fit: cover;
   }
@@ -35,6 +36,7 @@ header {
   top: -1.5rem;
   z-index: 999;
   box-shadow: 0 1px 1px $background-gray;
+
   @media (max-width: 769px) {
     position: sticky;
     top: 0;
@@ -49,9 +51,11 @@ header {
   background-color: $background-gray;
   font-family: $body-text;
   font-size: 1rem;
+
   .nav-item {
     padding-left: 1.5rem;
   }
+
   .nav-link {
     color: $text-gray;
     text-decoration: none;
@@ -68,20 +72,26 @@ header {
 
 .bottom-nav {
   @extend .top-nav;
+
   background-color: white;
+
   .navbar-brand {
     font-family: $header-text;
     color: $highlight-orange;
     font-weight: bold;
+
     img {
       height: 2rem;
     }
   }
+
   .navbar-toggler-icon {
     @include flexColumns();
+
     padding: 0;
     width: 2.5rem;
     outline: none;
+
     span {
       width: 100%;
       margin-bottom: 0.5rem;
@@ -89,25 +99,31 @@ header {
       border-radius: 25%;
       border-color: $highlight-orange;
     }
+
     .last-span {
       margin-bottom: 0;
     }
+
     &:focus {
       outline: none;
     }
   }
+
   .navbar-collapse {
     justify-content: end;
     background: white;
   }
+
   .nav-link {
     color: $background-gray;
     padding: 0.25rem;
     padding-bottom: 5px;
   }
+
   .active {
     outline: 3px solid $highlight-orange;
   }
+
   @media (max-width: 769px) {
     .nav-item {
       padding-left: 0;
@@ -115,10 +131,9 @@ header {
   }
 }
 
-
-
 .main-banner-container {
   @include steelBackground();
+
   min-height: 100vh;
 }
 
@@ -131,6 +146,7 @@ h3 {
 h2 {
   font-family: $header-text;
   color: $highlight-orange;
+
   @media (max-width: 768px) {
     font-size: 1.5rem;
   }
@@ -159,13 +175,16 @@ h2 {
 
 .venue {
   @extend .date;
+
   font-size: 16px;
   font-weight: light;
 }
 
 .main-program {
   @include flexColumns();
+
   background-color: $text-gray;
+
   a {
     color: $background-gray;
     text-decoration: underline;
@@ -174,7 +193,7 @@ h2 {
 
 .underline {
   border: 2px solid $highlight-orange;
-  width: 3rem; 
+  width: 3rem;
 }
 
 .program-cards {
@@ -185,6 +204,7 @@ h2 {
 
 .program-header {
   @include flexColumns();
+
   border: none;
   background-color: white;
   color: $highlight-orange;
@@ -192,7 +212,9 @@ h2 {
 
 .featured-speakers {
   @include flexColumns();
+
   background-color: $background-gray;
+
   h4 {
     color: $text-gray;
   }
@@ -221,20 +243,26 @@ h2 {
     font-weight: 700;
     color: $text-gray;
   }
+
   .highlight {
     font-size: 0.75rem;
     color: $highlight-orange;
     font-style: italic;
   }
+
   .mini-underline {
     @extend .underline;
+
     width: 1.5rem;
     border: 1px solid $text-gray;
   }
+
   p {
     @extend .highlight;
+
     color: $text-gray;
   }
+
   @media (max-width: 769px) {
     max-width: 50%;
   }
@@ -242,6 +270,7 @@ h2 {
 
 .partners {
   @include flexColumns();
+
   background-color: $text-gray;
   color: $background-gray;
 }
@@ -249,11 +278,13 @@ h2 {
 .partner-list {
   justify-content: space-between;
   align-items: center;
+
   h4 {
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
   }
+
   @media (max-width: 769px) {
     flex-direction: column;
     justify-content: center;
@@ -265,14 +296,17 @@ footer {
   background-color: $background-gray;
   justify-content: center;
   align-items: center;
+
   .logo-container {
     object-fit: cover;
     justify-content: start;
     align-items: center;
+
     @media (min-width: 769px) {
       min-width: 50%;
     }
   }
+
   h4 {
     font-family: $header-text;
     color: $highlight-orange;
@@ -284,15 +318,18 @@ footer {
     justify-content: center;
     align-items: start;
     color: $text-gray;
+
     h6 {
       font-weight: 700;
     }
+
     @media (max-width: 769px) {
       margin-top: 1rem;
       justify-content: stretch;
       align-items: start;
     }
   }
+
   @media (max-width: 769px) {
     flex-direction: column;
     justify-content: stretch;

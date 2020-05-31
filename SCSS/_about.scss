@@ -19,7 +19,9 @@ $body-text: Lato, sans-serif;
 
 .main-section {
   @include steelBackground();
+
   color: $highlight-orange;
+
   a {
     color: $highlight-orange;
     text-decoration: underline;
@@ -29,6 +31,7 @@ $body-text: Lato, sans-serif;
 .explanation {
   border-color: $text-gray;
   color: $highlight-orange;
+
   p {
     margin-bottom: 0;
   }
@@ -40,6 +43,7 @@ $body-text: Lato, sans-serif;
       max-width: 50%;
     }
   }
+
   .logo-box {
     border-color: $background-gray !important;
     padding: 1rem;
@@ -58,13 +62,16 @@ $body-text: Lato, sans-serif;
 .past-activity-card {
   max-width: 300px;
   color: $background-gray;
+
   .card-img-overlay {
     background: $highlight-orange;
     opacity: 0.7;
   }
+
   h4 {
     font-weight: 900;
   }
+
   a {
     color: $background-gray;
     text-decoration: none;

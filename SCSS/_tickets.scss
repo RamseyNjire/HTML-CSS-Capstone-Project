@@ -19,6 +19,7 @@ $body-text: Lato, sans-serif;
 
 main {
   min-height: 100vh;
+
   @include flexColumns();
 }
 
@@ -27,9 +28,11 @@ main {
   grid-template-columns: 1fr 2fr;
   border: 1px solid $background-gray;
   color: $highlight-orange;
+
   div {
     border-color: $background-gray !important;
   }
+
   .ticket-buyers {
     color: $background-gray;
     display: grid;
@@ -42,13 +45,17 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  .standalone, .plus-meal {
+
+  .standalone,
+  .plus-meal {
     color: $background-gray;
   }
+
   div {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   a {
     color: $highlight-orange;
     text-decoration: none;
