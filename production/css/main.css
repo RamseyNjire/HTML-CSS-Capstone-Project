@@ -127,7 +127,7 @@ main {
 body {
   font-family: Lato, sans-serif;
   color: #272a31;
-  background-color: #d3d3d3;
+  background-color: #fff;
   max-width: 1310px;
   margin: auto;
 }
@@ -155,11 +155,11 @@ header {
 }
 
 .top-menu-container {
-  background: #272a31;
+  background: #fff;
 }
 
 .top-nav, .bottom-nav {
-  background-color: #272a31;
+  background-color: #fff;
   font-family: Lato, sans-serif;
   font-size: 1rem;
 }
@@ -175,14 +175,8 @@ header {
   outline: none;
 }
 
-@media (max-width: 769px) {
-  .navbar {
-    background-image: url(/production/images/steel.png);
-  }
-}
-
 .bottom-nav {
-  background-color: white;
+  background-color: #fff;
 }
 
 .bottom-nav .navbar-brand {
@@ -234,7 +228,7 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  background: white;
+  background: #fff;
 }
 
 .bottom-nav .nav-link {
@@ -254,8 +248,7 @@ header {
 }
 
 .main-banner-container {
-  background-image: url(/production/images/steel.png);
-  background-color: #272a31;
+  background-color: #fff;
   min-height: 100vh;
 }
 
@@ -283,18 +276,18 @@ h2 {
 }
 
 .snippet {
-  border: 3px solid #d3d3d3;
+  border: 3px solid #272a31;
   padding: 1rem;
   font-family: Lato, sans-serif;
   font-size: 16px;
-  color: #d3d3d3;
+  color: #272a31;
 }
 
 .date, .venue {
   font-family: Lato, sans-serif;
   font-weight: bold;
   font-size: 32px;
-  color: #d3d3d3;
+  color: #272a31;
 }
 
 .venue {
@@ -316,11 +309,13 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #d3d3d3;
+  background-image: url(/production/images/steel.png);
+  background-color: #272a31;
+  color: #fff;
 }
 
 .main-program a {
-  color: #272a31;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -329,10 +324,18 @@ h2 {
   width: 3rem;
 }
 
+.program-cards {
+  color: #fff;
+}
+
 @media (min-width: 769px) {
   .program-cards {
     width: 50%;
   }
+}
+
+.program-cards .card {
+  background-color: #272a31;
 }
 
 .program-header {
@@ -350,7 +353,6 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   border: none;
-  background-color: white;
   color: #ec5242;
 }
 
@@ -368,11 +370,12 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #272a31;
+  background-color: #fff;
+  color: #272a31;
 }
 
 .featured-speakers h4 {
-  color: #d3d3d3;
+  color: #272a31;
 }
 
 @media (min-width: 769px) {
@@ -399,7 +402,7 @@ h2 {
   font-size: 1.25rem;
   line-height: 1.25rem;
   font-weight: 700;
-  color: #d3d3d3;
+  color: #272a31;
 }
 
 .info .highlight, .info p {
@@ -414,7 +417,7 @@ h2 {
 }
 
 .info p {
-  color: #d3d3d3;
+  color: #272a31;
 }
 
 @media (max-width: 769px) {
@@ -437,8 +440,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #d3d3d3;
-  color: #272a31;
+  background-color: #272a31;
+  color: #fff;
 }
 
 .partner-list {
@@ -470,7 +473,7 @@ h2 {
 }
 
 footer {
-  background-color: #272a31;
+  background-color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -513,7 +516,7 @@ footer .copyright-info {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  color: #d3d3d3;
+  color: #272a31;
 }
 
 footer .copyright-info h6 {
