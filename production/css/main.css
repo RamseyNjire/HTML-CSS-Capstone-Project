@@ -34,8 +34,8 @@
   .past-activity-cards .card-columns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -65,21 +65,21 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ticket-prices {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
-  grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
   border: 1px solid #272a31;
   color: #ec5242;
 }
@@ -93,18 +93,18 @@ main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .ticket-types {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .ticket-types .standalone,
@@ -116,7 +116,7 @@ main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .ticket-types a {
@@ -129,11 +129,12 @@ body {
   color: #272a31;
   background-color: #d3d3d3;
   max-width: 1310px;
+  margin: auto;
 }
 
 body img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 header {
@@ -142,7 +143,7 @@ header {
   top: -1.5rem;
   z-index: 999;
   -webkit-box-shadow: 0 1px 1px #272a31;
-  box-shadow: 0 1px 1px #272a31;
+          box-shadow: 0 1px 1px #272a31;
 }
 
 @media (max-width: 769px) {
@@ -157,20 +158,17 @@ header {
   background: #272a31;
 }
 
-.top-nav,
-.bottom-nav {
+.top-nav, .bottom-nav {
   background-color: #272a31;
   font-family: Lato, sans-serif;
   font-size: 1rem;
 }
 
-.top-nav .nav-item,
-.bottom-nav .nav-item {
+.top-nav .nav-item, .bottom-nav .nav-item {
   padding-left: 1.5rem;
 }
 
-.top-nav .nav-link,
-.bottom-nav .nav-link {
+.top-nav .nav-link, .bottom-nav .nav-link {
   color: #d3d3d3;
   text-decoration: none;
   padding: 0;
@@ -203,14 +201,14 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   width: 2.5rem;
   outline: none;
@@ -234,8 +232,8 @@ header {
 
 .bottom-nav .navbar-collapse {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   background: white;
 }
 
@@ -292,8 +290,7 @@ h2 {
   color: #d3d3d3;
 }
 
-.date,
-.venue {
+.date, .venue {
   font-family: Lato, sans-serif;
   font-weight: bold;
   font-size: 32px;
@@ -311,14 +308,14 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #d3d3d3;
 }
 
@@ -327,8 +324,7 @@ h2 {
   text-decoration: underline;
 }
 
-.underline,
-.info .mini-underline {
+.underline, .info .mini-underline {
   border: 2px solid #ec5242;
   width: 3rem;
 }
@@ -345,14 +341,14 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
   background-color: white;
   color: #ec5242;
@@ -364,14 +360,14 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #272a31;
 }
 
@@ -390,8 +386,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .speaker-image {
@@ -406,8 +402,7 @@ h2 {
   color: #d3d3d3;
 }
 
-.info .highlight,
-.info p {
+.info .highlight, .info p {
   font-size: 0.75rem;
   color: #ec5242;
   font-style: italic;
@@ -434,25 +429,25 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #d3d3d3;
   color: #272a31;
 }
 
 .partner-list {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .partner-list h4 {
@@ -465,11 +460,11 @@ h2 {
   .partner-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 1rem;
   }
 }
@@ -477,22 +472,22 @@ h2 {
 footer {
   background-color: #272a31;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .logo-container {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 769px) {
@@ -510,14 +505,14 @@ footer h4 {
 footer .copyright-info {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
   color: #d3d3d3;
 }
 
@@ -529,11 +524,11 @@ footer .copyright-info h6 {
   footer .copyright-info {
     margin-top: 1rem;
     -webkit-box-pack: stretch;
-    -ms-flex-pack: stretch;
-    justify-content: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 
@@ -541,15 +536,16 @@ footer .copyright-info h6 {
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: stretch;
-    -ms-flex-pack: stretch;
-    justify-content: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
     -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
+/*# sourceMappingURL=main.css.map */
