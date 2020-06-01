@@ -37,7 +37,6 @@ header {
   position: sticky;
   top: -1.5rem;
   z-index: 999;
-  box-shadow: 0 1px 1px $background-gray;
 
   @media (max-width: 769px) {
     position: sticky;
@@ -50,7 +49,7 @@ header {
 }
 
 .top-nav {
-  background-color: $background-white;
+  background-color: $background-gray;
   font-family: $body-text;
   font-size: 1rem;
 
@@ -65,12 +64,6 @@ header {
     outline: none;
   }
 }
-
-// .navbar {
-//   @media (max-width: 769px) {
-//     background-image: url(/production/images/steel.png);
-//   }
-// }
 
 .bottom-nav {
   @extend .top-nav;
@@ -144,7 +137,7 @@ h3 {
   color: $highlight-orange;
 }
 
-h2 {
+h1 {
   font-family: $header-text;
   color: $highlight-orange;
 
