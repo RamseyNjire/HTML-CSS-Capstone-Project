@@ -1,0 +1,92 @@
+$background-gray: #272a31;
+$background-white: #fff;
+$highlight-orange: #ec5242;
+$text-gray: #d3d3d3;
+$nav-padding: 0.25rem 13rem;
+$header-text: Frijole, sans-serif;
+$body-text: Lato, sans-serif;
+
+@mixin flexColumns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin steelBackground {
+  background-image: url(/production/images/steel.png);
+  background-color: $background-gray;
+}
+
+.main-section {
+  background-color: $background-white;
+  color: $highlight-orange;
+  border-bottom: 1px solid $background-gray;
+
+  .contact-paragraph {
+    color: $background-gray;
+  }
+
+  a {
+    color: $background-gray;
+    text-decoration: underline;
+  }
+}
+
+.explanation {
+  border-color: $background-gray;
+  color: $background-gray;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.logo-section {
+  p {
+    @media (min-width: 769px) {
+      max-width: 50%;
+    }
+  }
+
+  .logo-box {
+    border-color: $background-gray !important;
+    padding: 1rem;
+    max-width: 300px;
+  }
+}
+
+.past-activity-cards {
+  .card-columns {
+    @media (max-width: 769px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.past-activity-card {
+  max-width: 300px;
+  color: $background-gray;
+
+  .card-img-overlay {
+    background: $highlight-orange;
+    opacity: 0.7;
+  }
+
+  h4 {
+    font-weight: 900;
+  }
+
+  a {
+    color: $background-gray;
+    text-decoration: none;
+  }
+}
+
+.about-footer {
+  background-color: $background-gray;
+
+  .copyright-info {
+    color: $text-gray;
+  }
+}

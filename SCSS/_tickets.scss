@@ -1,0 +1,64 @@
+$background-gray: #272a31;
+$background-white: #fff;
+$highlight-orange: #ec5242;
+$text-gray: #d3d3d3;
+$nav-padding: 0.25rem 13rem;
+$header-text: Frijole, sans-serif;
+$body-text: Lato, sans-serif;
+
+@mixin flexColumns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin steelBackground {
+  background-image: url(/production/images/steel.png);
+  background-color: $background-gray;
+}
+
+main {
+  min-height: 100vh;
+
+  @include flexColumns();
+}
+
+.ticket-prices {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid $background-gray;
+  color: $highlight-orange;
+
+  div {
+    border-color: $background-gray !important;
+  }
+
+  .ticket-buyers {
+    color: $background-gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.ticket-types {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  .standalone,
+  .plus-meal {
+    color: $background-gray;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  a {
+    color: $highlight-orange;
+    text-decoration: none;
+  }
+}
