@@ -268,13 +268,14 @@ h3 {
   color: #ec5242;
 }
 
-h1 {
+h2 {
   font-family: Frijole, sans-serif;
+  font-size: 2.5rem;
   color: #ec5242;
 }
 
 @media (max-width: 768px) {
-  h1 {
+  h2 {
     font-size: 1.5rem;
   }
 }

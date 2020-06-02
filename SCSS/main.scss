@@ -137,8 +137,9 @@ h3 {
   color: $highlight-orange;
 }
 
-h1 {
+h2 {
   font-family: $header-text;
+  font-size: 2.5rem;
   color: $highlight-orange;
 
   @media (max-width: 768px) {
