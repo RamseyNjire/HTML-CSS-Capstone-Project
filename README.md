@@ -13,6 +13,7 @@
 ## Live Demo
 
 [Live Demo Link](https://heartsofartconference.netlify.app/)
+[Video Walkthrough Link](https://www.loom.com/share/4610d7abae904822b9638110e378aad2)
 
 
 ## Getting Started
